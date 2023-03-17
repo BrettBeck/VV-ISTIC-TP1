@@ -48,12 +48,16 @@ Variables they observed :
 Main results :  
     - successfully improving reliability of Netflix’s systems with production conditions  
     
-These experiments could be done with trains. We could for example observe the vibrations of a train when it travels in a real terrain.
+These experiments could be done with trains. We could for example observe the vibrations of a train when it travels on a real terrain.
 
 ----
 
 4.
 
+ The main advantages of having a formal specification for WebAssembly :  
+ - it helps developers write better programs as when you know exactly how the language works, you can make sure your programs will run smoothly without any surprises.  
+ - different web browsers can more easaly work together and run WebAssembly programs consistently. That means programms can work well on any browser, without having to worry about compatibility issues.  
+WebAssembly implementations should be tested because the behavior of the programm may deviate from the client's vision.
 ----
 
 5) According to the author of this paper, they were able to identify and fix some bugs and errors from the official WebAssembly specification. They were also able to prove the safety of the type system.
