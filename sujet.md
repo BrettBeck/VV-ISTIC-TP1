@@ -30,20 +30,23 @@ The solution was to change the test case to correspond to the specification.
 
 ----
 3)
-* Concrete experiments they perform :
-  One of the concrete experiments they performed was to test the impact of a bookmark service failure on the availability of the video streaming service. The experiment was designed to simulate a bookmark service failure for a small percentage of Netflix users.
-  The experiment then compared the performance of the video streaming service for this group of users with a control group, where no issues were introduced.
-* Requirements for these experiments :
-    * A measurable output that indicates normal behavior (in this case, SPS).
-    * The ability to selectively fail requests for a specific group of users.
-    * A control group and an experimental group.
-    * Hypothesis that the failure of the bookmarks service would not significantly impact video streaming.
-* Variables they observe :
-  They observed the SPS values after runing the experience for some period of time.
-* Main results they obtained :
-  They have either have more confidence in the system’s ability to maintain behavior in the presence of our variables, or a weakness has been uncovered and suggests a path for improvement.
-* Speculation about how these experiments could be carried in other organizations in terms of the kind of experiment that could be performed and the system variables to observe during the experiments :
-  We can speculate that the SNCF could also practice chaos engenering by creating some failures on the signals that the train can receive. We could imagine a signal that would tell the train that their is a debris on the rails.
+Concrete experiments they performed : 
+    •  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.
+    • Chaos Kong : simulates the failure of an entire Amazon EC2 region.
+    • Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.
+Requirements for these experiments :
+    • formulate a hypothesis about how the system will behave under certain conditions
+    • define what a normal behavior is and what an abnormal one is
+    • be able to measure impact of events in the system
+    • run experiment directly in production
+    • automate experiments
+    • minimize impacts of failures
+Variables they observed :
+    • number of requests that were affected
+    • the impact on availability and latency
+    • number of requests that were successfully handled
+Main results :
+    • successfully improving reliability of Netflix’s systems with production conditions
 
 ----
 
