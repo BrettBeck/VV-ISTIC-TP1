@@ -34,6 +34,7 @@ Concrete experiments they performed :
  -  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.  
  - Chaos Kong : simulates the failure of an entire Amazon EC2 region.  
  - Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.  
+
 Requirements for these experiments :  
  - formulate a hypothesis about how the system will behave under certain conditions  
  - define what a normal behavior is and what an abnormal one is  
