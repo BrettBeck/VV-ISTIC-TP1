@@ -59,7 +59,7 @@ These experiments could be done with trains. We could for example observe the vi
 
  The main advantages of having a formal specification for WebAssembly :  
  - it helps developers write better programs as when you know exactly how the language works, you can make sure your programs will run smoothly without any surprises.  
- - different web browsers can more easaly work together and run WebAssembly programs consistently. That means programms can work well on any browser, without having to worry about compatibility issues.  
+ - different web browsers can more easily work together and run WebAssembly programs consistently. That means programms can work well on any browser, without having to worry about compatibility issues.  
 
 WebAssembly implementations should be tested because the behavior of the programm may deviate from the client's vision.
 
