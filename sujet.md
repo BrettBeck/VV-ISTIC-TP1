@@ -47,6 +47,8 @@ Variables they observed :
     - number of requests that were successfully handled  
 Main results :  
     - successfully improving reliability of Netflix’s systems with production conditions  
+    
+These experiments could be done with trains. We could for example observe the vibrations of a train when it travels in a real terrain.
 
 ----
 
