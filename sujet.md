@@ -31,9 +31,9 @@ The solution was to change the test case to correspond to the specification.
 ----
 3)
 Concrete experiments they performed :   
-    -  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.  
-    - Chaos Kong : simulates the failure of an entire Amazon EC2 region.  
-    - Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.  
+ -  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.  
+ - Chaos Kong : simulates the failure of an entire Amazon EC2 region.  
+ - Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.  
 Requirements for these experiments :  
  - formulate a hypothesis about how the system will behave under certain conditions  
  - define what a normal behavior is and what an abnormal one is  
@@ -41,10 +41,12 @@ Requirements for these experiments :
  - run experiment directly in production  
  - automate experiments  
  - minimize impacts of failures  
+
 Variables they observed :  
  - number of requests that were affected  
  - the impact on availability and latency  
  - number of requests that were successfully handled  
+
 Main results :  
  - successfully improving reliability of Netflix’s systems with production conditions  
     
@@ -58,8 +60,8 @@ These experiments could be done with trains. We could for example observe the vi
  - it helps developers write better programs as when you know exactly how the language works, you can make sure your programs will run smoothly without any surprises.  
  - different web browsers can more easaly work together and run WebAssembly programs consistently. That means programms can work well on any browser, without having to worry about compatibility issues.  
 
-
 WebAssembly implementations should be tested because the behavior of the programm may deviate from the client's vision.
+
 ----
 
 5) According to the author of this paper, they were able to identify and fix some bugs and errors from the official WebAssembly specification. They were also able to prove the safety of the type system.
