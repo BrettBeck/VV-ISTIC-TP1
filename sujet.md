@@ -30,23 +30,23 @@ The solution was to change the test case to correspond to the specification.
 
 ----
 3)
-Concrete experiments they performed : 
-    -  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.
-    - Chaos Kong : simulates the failure of an entire Amazon EC2 region.
-    - Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.
-Requirements for these experiments :
-    - formulate a hypothesis about how the system will behave under certain conditions
-    - define what a normal behavior is and what an abnormal one is
-    - be able to measure impact of events in the system
-    - run experiment directly in production
-    - automate experiments
-    - minimize impacts of failures
-Variables they observed :
-    - number of requests that were affected
-    - the impact on availability and latency
-    - number of requests that were successfully handled
-Main results :
-    - successfully improving reliability of Netflix’s systems with production conditions
+Concrete experiments they performed :   
+    -  Chaos Monkey : randomly terminates virtual machine instances that host production services to encourage engineers to design software services that can withstand such failures.  
+    - Chaos Kong : simulates the failure of an entire Amazon EC2 region.  
+    - Failure Injection Testing (FIT) : exercises where they intentionally cause requests between Netflix services to fail and verify that the system degrades gracefully.  
+Requirements for these experiments :  
+    - formulate a hypothesis about how the system will behave under certain conditions  
+    - define what a normal behavior is and what an abnormal one is  
+    - be able to measure impact of events in the system  
+    - run experiment directly in production  
+    - automate experiments  
+    - minimize impacts of failures  
+Variables they observed :  
+    - number of requests that were affected  
+    - the impact on availability and latency  
+    - number of requests that were successfully handled  
+Main results :  
+    - successfully improving reliability of Netflix’s systems with production conditions  
 
 ----
 
